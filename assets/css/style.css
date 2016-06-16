@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar {
   background-color: #11103e;
 }
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
 .navbar-toggle {
   float: left;
   margin-left: 15px;
