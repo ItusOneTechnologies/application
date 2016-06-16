@@ -1,4 +1,4 @@
-app.directive("report", function() {
+app.directive("reports", function() {
   return {
     restrict: 'E',
     replace: true,
