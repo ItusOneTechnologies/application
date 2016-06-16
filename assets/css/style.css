@@ -20,7 +20,13 @@ h1, h2, h3, h4, h5, h6, p {
 .navbar-default .navbar-brand {
   color: #fff;
 }
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
 .navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover {
   color: #fff;
 }
 .navbar-toggle {
@@ -67,6 +73,15 @@ h1, h2, h3, h4, h5, h6, p {
 #report .report-card-header .report-card-tools .small-glyph {
   font-size: 1em;
   margin: 0 5px;
+}
+.fa-question:hover {
+  cursor: pointer;
+}
+.fa-wrench:hover {
+  cursor: pointer;
+}
+.fa-times:hover {
+  cursor: pointer;
 }
 #report .report-card-header h2 {
   margin: 0;
