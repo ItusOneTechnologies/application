@@ -46,6 +46,77 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Report */
+#report .report-tabs {
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
+  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
+}
+#report .nav > li > a:hover {
+  background-color: #45729a;
+  border: 0;
+}
+#report .nav > li.active > a {
+  border: 0;
+}
+#report .week-tabs {
+  background-color: #2a3f54;
+  width: 100%;
+  position: relative;
+}
+#report .week-tabs > li {
+  position: relative;
+  left: 100px;
+}
+#report .week-tabs > li > a {
+  color: #fff;
+}
+#report .nav-tabs {
+  border-bottom: 0;
+}
+#report .nav-tabs > li {
+  width: 168px;
+}
+#report .nav-tabs > li > a{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#report .nav-tabs > li.active > a {
+  background-color: #5a98cf;
+}
+#report .day-stack {
+  background-color: #2a3f54;
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#report .day-stack > li > a {
+  color: #fff;
+}
+#report .nav-pills > li {
+  width: 100px;
+  line-height: 71px;
+  padding: 0;
+
+}
+#report .nav-pills > li:not(:nth-child(1)) {
+  margin-top: 7.5px;
+}
+#report .nav-pills > li > a {
+/*   background-color: #fff; */
+  margin: 0;
+  padding: 0 0 0 15px;
+  height: 65px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+#report .report-data {
+  background-color: #fff;
+  width: 100%;
+  height: 500px;
+}
 #report {
 }
 #report .report-card-outer {
