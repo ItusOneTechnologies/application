@@ -12,12 +12,28 @@ app.controller("reportController", function($scope) {
       labels: ["16:47", "17:47", "18:47", "19:47", "20:47"],
       datasets: [
         {
-          label: "Heartrate by the Hour",
-          backgroundColor: "rgba(172,194,132,0.4)",
-          strokeColor: "#ACC26D",
+          label: "Employee #1",
+          backgroundColor: "rgba(172,194,132,0.0)",
+          borderColor: "#ACC26D",
           pointBackgroundColor: "#fff",
           pointBorderColor: "#9DB86D",
           data: [66, 77, 108, 85, 75]
+        },
+        {
+          label: "Employee #2",
+          backgroundColor: "rgba(225,236,244,0.0)",
+          borderColor: "#2451f4",
+          pointBackgroundColor: "#fff",
+          pointBorderColor: "#a1a9b0",
+          data: [50, 55, 70, 65, 60]
+        },
+        {
+          label: "Employee #3",
+          backgroundColor: "rgba(234,204,181,0.0)",
+          borderColor: "#f48024",
+          pointBackgroundColor: "#fff",
+          pointBorderColor: "#b45b15",
+          data: [80, 85, 100, 60, 65]
         }
       ] 
     }
