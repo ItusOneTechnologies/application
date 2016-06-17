@@ -71,10 +71,11 @@ h1, h2, h3, h4, h5, h6, p {
   color: #fff;
 }
 #report .nav-tabs {
-  border-bottom: 0;
+  border-bottom: none;
 }
 #report .nav-tabs > li {
-  width: 168px;
+  text-align: center;
+  width: 18%;
 }
 #report .nav-tabs > li > a{
   -webkit-border-radius: 0;
@@ -117,7 +118,19 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   height: 500px;
 }
-#report {
+#report .report-table {
+  width: 100%;
+  height: 100%;
+  padding-left: 100px;
+}
+#report .report-table > .table-row {
+  width: 100%;
+  height: 65px;
+  display: block;
+  margin: 0;
+}
+#report .report-table > .table-row:not(:nth-child(1)) {
+  margin-top: 7.5px;
 }
 #report .report-card-outer {
   padding: 25px;
