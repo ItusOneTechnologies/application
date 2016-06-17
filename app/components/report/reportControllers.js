@@ -12,7 +12,7 @@ app.controller("reportController", function($scope) {
       datasets: [
         {
           label: "Employee #1",
-          backgroundColor: "rgba(172,194,132,0.0)",
+          backgroundColor: "rgba(172,194,132,0.1)",
           borderColor: "#ACC26D",
           pointBackgroundColor: "#fff",
           pointBorderColor: "#9DB86D",
@@ -20,7 +20,7 @@ app.controller("reportController", function($scope) {
         },
         {
           label: "Employee #2",
-          backgroundColor: "rgba(225,236,244,0.0)",
+          backgroundColor: "rgba(225,236,244,0.1)",
           borderColor: "#2451f4",
           pointBackgroundColor: "#fff",
           pointBorderColor: "#a1a9b0",
@@ -28,7 +28,7 @@ app.controller("reportController", function($scope) {
         },
         {
           label: "Employee #3",
-          backgroundColor: "rgba(234,204,181,0.0)",
+          backgroundColor: "rgba(234,204,181,0.1)",
           borderColor: "#f48024",
           pointBackgroundColor: "#fff",
           pointBorderColor: "#b45b15",
@@ -38,22 +38,22 @@ app.controller("reportController", function($scope) {
     };
     var adata = {
       labels: [
-        "Red",
-        "Blue",
-        "Yellow"
+        "At Risk",
+        "Normal",
+        "Caution"
       ],
       datasets: [
         {
             data: [30, 50, 20],
             backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
+                "#FF0000",
+                "#23781b",
+                "#f9ee02"
             ],
             hoverBackgroundColor: [
                 "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
+                "#217619",
+                "#e5db00"
             ]
         }]
     }
@@ -62,7 +62,8 @@ app.controller("reportController", function($scope) {
       type: 'line',
       data: hdata,
       options: {
-        maintainAspectRation: false
+        responsive: true,
+        maintainAspectRatio: false
       }
     });
     var atrisk = document.getElementById('atrisk').getContext('2d');
