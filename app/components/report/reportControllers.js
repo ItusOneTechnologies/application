@@ -7,7 +7,6 @@ app.directive("reports", function() {
 });
 app.controller("reportController", function($scope) {
   angular.element(document).ready( function() {
-    console.log('this text worked');
     var hdata = {
       labels: ["16:47", "17:47", "18:47", "19:47", "20:47"],
       datasets: [
@@ -36,11 +35,40 @@ app.controller("reportController", function($scope) {
           data: [80, 85, 100, 60, 65]
         }
       ] 
+    };
+    var adata = {
+      labels: [
+        "Red",
+        "Blue",
+        "Yellow"
+      ],
+      datasets: [
+        {
+            data: [30, 50, 20],
+            backgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ],
+            hoverBackgroundColor: [
+                "#FF6384",
+                "#36A2EB",
+                "#FFCE56"
+            ]
+        }]
     }
     var heartrate = document.getElementById('heartrate').getContext('2d');
     var chart = new Chart(heartrate, {
       type: 'line',
-      data: hdata
+      data: hdata,
+      options: {
+        maintainAspectRation: false
+      }
+    });
+    var atrisk = document.getElementById('atrisk').getContext('2d');
+    var doughnut = new Chart(atrisk, {
+      type: 'doughnut',
+      data: adata
     });
   });
 });
