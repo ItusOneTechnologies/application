@@ -2,7 +2,7 @@ README
 
 FILE STRUCTURE 
 --------------
-
+'''
 dash
 ----app
 --------appmodule.js
@@ -53,6 +53,6 @@ dash
 ----favicon.ico
 ----README.md
 ----LICENSE
-
+'''
 
 
