@@ -45,6 +45,16 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 40px;
 }
 
+/* Sidebar */
+section#sidebar {
+  height: 100%;
+  width: 500px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: rgba(85, 85, 85, 0.4);
+}
+
 /* Report */
 #report .report-tabs {
   -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
@@ -132,6 +142,17 @@ h1, h2, h3, h4, h5, h6, p {
 #report .report-table > .table-row:not(:nth-child(1)) {
   margin-top: 7.5px;
 }
+#report .report-table .table-row:hover {
+  background-color: #fefefe;
+}
+#report .table-row .table-data {
+  display: block;
+  float: left;
+  width: 19.538%;
+  height: 100%;
+  background-color: rgba(85, 85, 85, 0.5);
+  margin-right: 2px;
+}
 #report .report-card-outer {
   padding: 25px;
 }
@@ -146,7 +167,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 #report .report-card .report-card-header {
   margin: 0;
-  
 }
 #report .report-card-header .report-card-tools {
   height: 25px;
@@ -183,5 +203,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .report-card .report-card-data {
   height: 315px;
+  width: 100%;
+}
+.report-card .report-card-data-half {
+  height: 157.5px;
   width: 100%;
 }
