@@ -14,6 +14,29 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* Header */
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #11103e;
+}
+nav div.nav-sidebar-menu {
+  display: inline-block;
+  height: 100%;
+  width: 50px;
+}
+nav button.nav-sidebar-button {
+  height: 100%;
+  width: 50px;
+  background-color: #11103e;
+  border: none;
+}
+nav span.sidebar-icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #fff;
+  margin: 10% auto;
+}
 .navbar {
   background-color: #11103e;
 }
@@ -33,16 +56,30 @@ h1, h2, h3, h4, h5, h6, p {
   float: left;
   margin-left: 15px;
 }
-.nav .user-circle {
+nav div.user-circle {
+  display: inline-block;
   width: 40px;
   height: 40px;
   margin: 5px 10px;
   border-radius: 100%;
   background-color: #fff;
   text-align: center;
+  float: right;
 }
 .user-circle i {
   line-height: 40px;
+}
+div.nav-user-name {
+  display: inline-block;
+  float: right;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+}
+p.user-name {
+  line-height: 50px;
+  color: #fff;
+  font-size: 1.5em;
 }
 
 /* Sidebar */
