@@ -13,29 +13,32 @@
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
     <link rel="icon" type="image/ico" href="./favicon.ico"> <!-- icon in browser tab -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans|Raleway' rel='stylesheet' type='text/css'>
+    <script src="assets/libs/jquery-2.2.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
   </head>
   <body ng-app="dashApp">
     
     
-    <app-header></app-header>
     <sidebar></sidebar>
-    
-    <section id="report" >
-      <div class="container-fluid">
-        <div class="content">
-          <div class="row">
-            <reports-two></reports-two>
+    <div id="wrapper">
+      <app-header></app-header>
+
+
+      <section id="report" >
+        <div class="container-fluid">
+          <div class="content">
+            <div class="row">
+              <reports-two></reports-two>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     
     
     
     
-    <script src="assets/libs/jquery-2.2.1.min.js"></script>
     <script src="assets/libs/bootstrap.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="app/appmodule.js"></script>
