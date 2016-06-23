@@ -66,7 +66,7 @@ nav span.sidebar-icon-bar {
   float: left;
   margin-left: 15px;
 }
-nav div.user-circle {
+div.user-circle {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -107,7 +107,27 @@ div.sidebar {
   -moz-box-shadow: inset -2px -2px 7px 0px rgba(0,0,0,0.75);
   box-shadow: inset -2px -2px 7px 0px rgba(0,0,0,0.75);
 }
-
+div.sidebar-user {
+  height: 50px;
+  width: 100%;
+}
+p.sidebar-user-name {
+  display: inline-block;
+  line-height: 50px;
+  color: #fff;
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+div.sidebar-nav {
+  width: 100%;
+}
+div.sidebar-nav > ul {
+  list-style-type: none;
+}
+div.sidebar-nav > ul > li.sb-nav-item {
+  height: 50px;
+  color: #fff;
+}
 /* Report */
 #report .report-tabs {
   -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.4);
