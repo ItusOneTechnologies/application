@@ -76,6 +76,9 @@ div.nav-user-name {
   width: 200px;
   text-align: center;
 }
+div.nav-user-name:hover {
+  cursor: pointer;
+}
 p.user-name {
   line-height: 50px;
   color: #fff;
