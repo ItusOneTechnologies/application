@@ -138,6 +138,15 @@ li.report-nav-li > a {
   text-decoration: none;
   color: #000;
 }
+div.pointer {
+  display: none;
+  width: 0;
+  position: fixed;
+  border-color: transparent;
+  border-bottom-color: #333;
+  border-style: dashed dashed solid;
+  border-width: 0 8.5px 8.5px;
+}
 
 /* Sidebar */
 div.sidebar {
