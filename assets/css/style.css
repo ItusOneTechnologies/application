@@ -106,14 +106,37 @@ div.statusbar {
 /*   z-index: -1; */
 }
 div.nav-breadcrumb {
+  display: inline-block;
   height: 100%;
+  width: auto;
 }
 div.nav-breadcrumb > p {
   padding: 0 0 0 25px;
   line-height: 50px;
 }
-div.nav-breadcrumb > p > a:hover {
+/* div.nav-breadcrumb > p > a:hover {
   cursor: pointer;
+} */
+div.report-nav {
+  display: inline-block;
+  position: absolute;
+  right: 25px;
+}
+ul.report-nav-ul {
+  padding: 0;
+}
+li.report-nav-li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  line-height: 50px;
+}
+li.report-nav-li > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
 }
 
 /* Sidebar */
