@@ -124,28 +124,42 @@ div.report-nav {
 }
 ul.report-nav-ul {
   padding: 0;
+  oveflow: hidden;
 }
 li.report-nav-li {
-  display: inline-block;
+  display: inline-table;
   width: 100px;
   text-align: center;
   line-height: 50px;
 }
-li.report-nav-li > a {
+a.report-nav-link {
   display: block;
   height: 100%;
-  width: 100%;
+  width: 100px;
   text-decoration: none;
   color: #000;
+  position: relative;
+  right: 0;
 }
-div.pointer {
-  display: none;
-  width: 0;
-  position: fixed;
-  border-color: transparent;
-  border-bottom-color: #333;
-  border-style: dashed dashed solid;
-  border-width: 0 8.5px 8.5px;
+a.report-nav-link:hover {
+  background-color: #f0f0f0;
+}
+div.dropdown-content {
+  display: block;
+  clear: both;
+  position: relative;
+  width: 200px;
+  height: auto;
+  background-color: #f6f6f6;
+  z-index: 1;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+div.dropdown-content a {
+  display: block;
+  width: 100%;
+  
 }
 
 /* Sidebar */

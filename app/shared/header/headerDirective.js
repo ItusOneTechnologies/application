@@ -8,14 +8,7 @@ app.directive("appHeader", function () {
         navClicked();
       };
       $scope.reportNavClick = function($event) {
-        var offset = $($event.currentTarget).offset();
-        var li = $('.report-nav-li');
-        var center = li.width()/2;
-        if ($('.pointer').hasClass('open')) {
-          $scope.closePointer();
-        } else {
-          $scope.openPointer(offset, center);
-        }
+        console.log($event.currentTarget);
       };
       $scope.openPointer = function(offset, center) {
         var pointer = $('.pointer');
