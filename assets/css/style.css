@@ -123,12 +123,13 @@ div.report-nav {
   right: 25px;
 }
 ul.report-nav-ul {
+  margin: 0;
   padding: 0;
   oveflow: hidden;
 }
 li.report-nav-li {
   display: inline-table;
-  width: 100px;
+  width: 200px;
   text-align: center;
   line-height: 50px;
 }
@@ -139,16 +140,15 @@ a.report-nav-link {
   text-decoration: none;
   color: #000;
   position: relative;
-  right: 0;
+  left: 100px;
 }
 a.report-nav-link:hover {
   background-color: #f0f0f0;
 }
 div.dropdown-content {
-  display: block;
-  clear: both;
+  display: none;
   position: relative;
-  width: 200px;
+  min-width: 200px;
   height: auto;
   background-color: #f6f6f6;
   z-index: 1;
@@ -156,11 +156,17 @@ div.dropdown-content {
   -moz-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+.open-block {
+  display: block;
+}
+li.report-nav-li:nth-child(2) > div.dropdown-cotnent {
+  left: 0;
+}
 div.dropdown-content a {
   display: block;
   width: 100%;
-  
 }
+
 
 /* Sidebar */
 div.sidebar {
