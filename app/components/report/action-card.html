@@ -1,3 +1,11 @@
+<!-- <div class="tabbable">
+  <ul class="navigation">
+    <li ng-repeat="button in buttons" ng-class="{active:button.selected}">
+      <a href="" ng-click="select(button)">{{button.title}}</a>
+    </li>
+  </ul>
+  <div class="tab-content" ng-transclude></div>
+</div> -->
 <div class="col-lg-12">
   <div class="action-card-outer">
     <div class="action-card">
@@ -26,7 +34,19 @@
             Recommendations
           </h4>
         </div>
-        <div class="rec-card-outer col-lg-4">
+        <div ng-repeat="button in buttons" class="rec-card-outer col-lg-4">
+          <div class="rec-card">
+            <a href="#" ng-click="select(button)">
+              <h1 class="priority">
+                {{button.priority}}
+              </h1>
+              <h4 class="rec">
+                {{button.rec}}
+              </h4>
+            </a>
+          </div>
+        </div>
+<!--         <div class="rec-card-outer col-lg-4">
           <div class="rec-card">
             <a href="#">
               <h1 class="priority">
@@ -85,8 +105,9 @@
               </h4>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
+  <div class="tab-content" ng-transclude></div>
 </div>

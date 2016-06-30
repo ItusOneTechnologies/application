@@ -1,3 +1,43 @@
+app.directive("actionBar", function() {
+  return {
+    restrict: 'E',
+    transclude: true,
+    scope: {},
+    controller: ['$scope', function($scope) {
+      var buttons = $scope.buttons = [];
+      
+      $scope.select = function(button) {
+        angular.forEach(buttons, function(button) {
+          button.selected = false;
+        });
+        button.selected = true;
+      };
+      
+      this.addButton = function(button) {
+        if (buttons.length === 0) {
+          $scope.select(button);
+        }
+        buttons.push(button);
+      };
+    }],
+    templateUrl: './app/components/report/action-card.html'
+  };
+})
+.directive("actionResult", function() {
+  return {
+    require: '^^actionBar',
+    restrict: 'E',
+    transclude: true,
+    scope: {
+      priority: '@',
+      rec: '@'
+    },
+    link: function(scope, element, attrs, actionBarCtrl) {
+      actionBarCtrl.addButton(scope);
+    },
+    templateUrl: './app/components/report/action-result.html'
+  };
+})
 app.directive("reports", function() {
   return {
     restrict: 'E',
