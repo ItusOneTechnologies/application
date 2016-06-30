@@ -10,7 +10,7 @@ body {
   background-color: #e0e0e0;
 }
 h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: normal;
 }
 div#wrapper {
@@ -311,6 +311,92 @@ i.sb-caret {
   height: 100%;
   background-color: rgba(85, 85, 85, 0.5);
   margin-right: 2px;
+}
+/* action card */
+div.action-card-outer {
+  padding: 25px;
+}
+div.action-card {
+  width: 100%;
+  height: auto;
+  padding: 10px 15px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+}
+h4.jobsite-header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+img.jobsite-img {
+  border: 2px solid #707070;
+}
+h4.stats-header {
+  font-size: 1.5em;s
+  font-weight: bold;
+}
+ul.stats-ul {
+  list-style: none;
+  padding: 0;
+}
+ul.stats-ul > li {
+  font-size: 1.5em;
+  line-height: 40px;
+}
+div.second-row {
+  border-top: 1px solid #707070;
+  margin-top: 10px;
+}
+h4.recommendation-header {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+div.rec-card-outer {
+  padding: 15px;
+}
+div.rec-card {
+  font-family: 'Raleway', sans-serif;
+  background-color: #707070;
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  height: 75px;
+/*   max-width: 344px; */
+  padding: 0 0 0 15px;
+}
+div.rec-card:hover {
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+div.rec-card > a{
+  height: 100%;
+  width: 100%;
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+h1.priority {
+  display: block;
+  float: left;
+  height: 100%;
+  margin: 0;
+  padding: 18.25px 0 0 0;
+}
+h4.rec {
+  margin: 0;
+  display: block;
+  height: 100%;
+  padding: 18.25px 12px 0 50px;
 }
 #report .report-card-outer {
   padding: 25px;
